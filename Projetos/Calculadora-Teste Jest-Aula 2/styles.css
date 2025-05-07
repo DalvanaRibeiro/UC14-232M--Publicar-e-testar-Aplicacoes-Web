@@ -1,0 +1,187 @@
+/* Estilos gerais para o corpo da página */
+body {
+    /* Define a família de fontes para o texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Configura o layout como flexbox para centralização fácil */
+    display: flex;
+    
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    
+    /* Centraliza verticalmente */
+    align-items: center;
+    
+    /* Garante que o body ocupe pelo menos toda a altura da tela */
+    min-height: 100vh;
+    
+    /* Remove margens padrão */
+    margin: 0;
+    
+    /* Aplica um gradiente suave como plano de fundo */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Estilo do container principal da calculadora */
+.calculator {
+    /* Largura fixa da calculadora */
+    width: 320px;
+    
+    /* Cor de fundo branca */
+    background-color: #fff;
+    
+    /* Bordas arredondadas */
+    border-radius: 20px;
+    
+    /* Sombra suave para efeito 3D */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    
+    /* Garante que bordas arredondadas sejam respeitadas */
+    overflow: hidden;
+    
+    /* Espaçamento interno */
+    padding: 20px;
+}
+
+/* Estilo do display/visor da calculadora */
+.display {
+    /* Ocupa 100% da largura disponível */
+    width: 100%;
+    
+    /* Altura fixa */
+    height: 80px;
+    
+    /* Margem na parte inferior */
+    margin-bottom: 20px;
+    
+    /* Espaçamento interno */
+    padding: 10px;
+    
+    /* Cor de fundo cinza claro */
+    background-color: #f8f9fa;
+    
+    /* Bordas arredondadas */
+    border-radius: 10px;
+    
+    /* Alinha o texto à direita */
+    text-align: right;
+    
+    /* Tamanho grande de fonte */
+    font-size: 2.5rem;
+    
+    /* Remove bordas padrão */
+    border: none;
+    
+    /* Sombra interna para efeito de profundidade */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    
+    /* Garante que conteúdo longo não quebre o layout */
+    overflow: hidden;
+    
+    /* Adiciona reticências se o texto for muito longo */
+    text-overflow: ellipsis;
+}
+
+/* Container dos botões */
+.buttons {
+    /* Cria um grid layout */
+    display: grid;
+    
+    /* 4 colunas com largura igual */
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Espaçamento entre os botões */
+    gap: 10px;
+}
+
+/* Estilo base para todos os botões */
+button {
+    /* Altura fixa */
+    height: 60px;
+    
+    /* Remove bordas padrão */
+    border: none;
+    
+    /* Bordas arredondadas */
+    border-radius: 10px;
+    
+    /* Tamanho da fonte */
+    font-size: 1.5rem;
+    
+    /* Muda cursor para pointer */
+    cursor: pointer;
+    
+    /* Transição suave para efeitos hover */
+    transition: all 0.2s ease;
+    
+    /* Cor de fundo padrão */
+    background-color: #e9ecef;
+}
+
+/* Efeito quando o mouse passa sobre os botões */
+button:hover {
+    /* Move o botão ligeiramente para cima */
+    transform: translateY(-2px);
+    
+    /* Adiciona sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para botões de operações (4n = cada 4º botão) */
+button:nth-child(4n),
+button:nth-child(19) {
+    /* Cor laranja para operações */
+    background-color: #ff9f1c;
+    
+    /* Texto branco para contraste */
+    color: white;
+}
+
+/* Estilo específico para o botão de limpar (C) */
+button#clear {
+    /* Cor vermelha */
+    background-color: #ff6b6b;
+    
+    /* Texto branco */
+    color: white;
+}
+
+/* Estilo para o botão de igual (=) */
+button#equals {
+    /* Cor verde */
+    background-color: #2ec4b6;
+    
+    /* Texto branco */
+    color: white;
+    
+    /* Ocupa 4 colunas do grid */
+    grid-column: span 4;
+}
+
+/* Efeito quando o botão é clicado */
+button:active {
+    /* Remove o movimento do hover */
+    transform: translateY(0);
+    
+    /* Remove a sombra do hover */
+    box-shadow: none;
+}
+
+/* Estilos responsivos para telas menores que 400px */
+@media (max-width: 400px) {
+    .calculator {
+        /* Largura relativa */
+        width: 90%;
+        
+        /* Reduz o padding */
+        padding: 15px;
+    }
+    
+    button {
+        /* Altura menor para botões */
+        height: 50px;
+        
+        /* Fonte menor */
+        font-size: 1.2rem;
+    }
+}

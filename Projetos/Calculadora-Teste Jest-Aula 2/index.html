@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Declara que este é um documento HTML5 -->
+<html>
+<!-- Tag raiz que envolve todo o conteúdo HTML -->
+
+<head>
+    <!-- Cabeçalho do documento - contém metadados e links para recursos externos -->
+    <title>Calculadora da 232n</title>
+    <!-- Define o título que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link para o arquivo CSS que estiliza a página -->
+</head>
+
+<body>
+    <!-- Corpo do documento - todo o conteúdo visível fica aqui -->
+    
+    <div class="calculator">
+        <!-- Div principal que contém toda a calculadora -->
+        <!-- 'class' é um identificador para estilização no CSS -->
+        
+        <h2> calculadora da 232N </h2><br>
+        <!-- Título da calculadora (h2 = heading nível 2) -->
+        <!-- <br> é uma quebra de linha (não recomendado usar assim, melhor controlar espaçamento via CSS) -->
+        
+        <div class="display" id="display">0</div>
+        <!-- Visor da calculadora -->
+        <!-- 'id' é um identificador único para manipulação no JavaScript -->
+        <!-- Inicia mostrando "0" -->
+        
+        <div class="buttons">
+            <!-- Container para todos os botões -->
+            
+            <!-- Primeira linha de botões -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>+</button>
+            <!-- Cada <button> cria um botão clicável -->
+            
+            <!-- Segunda linha de botões -->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            
+            <!-- Terceira linha de botões -->
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>×</button>
+            <!-- × é o símbolo de multiplicação -->
+            
+            <!-- Quarta linha de botões -->
+            <button>0</button>
+            <button>.</button>
+            <!-- Botão de ponto decimal -->
+            <button id="clear">C</button>
+            <!-- Botão de limpar com ID específico -->
+            <button>÷</button>
+            <!-- ÷ é o símbolo de divisão -->
+            
+            <!-- Botão de igual ocupa 4 colunas -->
+            <button id="equals" style="grid-column: span 4">=</button>
+            <!-- style="grid-column: span 4" faz o botão ocupar o espaço de 4 colunas -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Link para o arquivo JavaScript que dá funcionalidade à calculadora -->
+    <!-- Sempre colocado no final do body para carregar após o HTML -->
+</body>
+</html>
