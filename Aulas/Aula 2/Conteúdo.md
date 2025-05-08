@@ -18,9 +18,9 @@ Nesta aula, vamos aprender a criar uma **calculadora simples** utilizando **HTML
 - **JavaScript**: Para implementar a lógica dos cálculos.
 - **Jest**: Para realizar testes unitários e garantir a precisão das funcionalidades.
 
-## 🎥 Link para a Aula
+##  Link para a Aula
 
-Clique no link abaixo para acessar a gravação completa da aula:
+Clique no link abaixo para acessar a aula:
 
 [Aula 2 - Criando uma Calculadora com HTML, CSS e JavaScript e Testes com Jest](https://www.canva.com/design/DAGdw16Af6A/k1Ilcl_Ziii3fm-GjQMLWQ/edit?utm_content=DAGdw16Af6A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
