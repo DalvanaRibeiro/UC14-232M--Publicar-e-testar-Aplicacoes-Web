@@ -1,6 +1,6 @@
 # 📢  UC14 - Publicar e Testar Aplicações Web - Turma 242N 🚀
 
-Olá, turmas 232N e 242M! 🎉
+Olá, turma 242M! 🎉
 
 Parabéns por chegarem até aqui! Estamos quase no final dessa jornada e vocês estão prestes a se formar! 👏🏼🎓 É uma alegria acompanhar o esforço de cada um de vocês até este ponto.  ✨
 
