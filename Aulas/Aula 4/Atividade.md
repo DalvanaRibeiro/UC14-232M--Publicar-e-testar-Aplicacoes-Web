@@ -1,4 +1,4 @@
-# 🚀 **Atividade: Criando um Projeto React com Vite**
+# 🚀 **Atividade: Criando um Projeto React com Vite e fazendo o Deploy com Vercel**
 
 ### **Objetivo:**
 Neste exercício, você irá criar um novo projeto React utilizando o **Vite**, com a estrutura de componentes e estilos separados. O objetivo é organizar o código com componentes reutilizáveis, estilos bem definidos e a funcionalidade de um botão que leva a um vídeo.
@@ -40,6 +40,7 @@ Neste exercício, você irá criar um novo projeto React utilizando o **Vite**, 
 - O botão deve redirecionar para **qualquer vídeo do YouTube**.
 - O layout deve ser responsivo e funcionar bem em telas de diferentes tamanhos.
 - Os componentes devem ser reutilizáveis e bem estruturados.
+- Deve ser realizado o deploy com o Vercel
 
 
 ---
